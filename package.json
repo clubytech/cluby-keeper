@@ -1,0 +1,22 @@
+{
+  "name": "@cluby/keeper",
+  "version": "0.1.0",
+  "description": "Liquidation and oracle-divergence watchdog for Cluby markets on Robinhood Chain",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --experimental-strip-types src/index.ts",
+    "watch-only": "node --experimental-strip-types src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cluby/abi": "workspace:*",
+    "@cluby/config": "workspace:*",
+    "@cluby/sdk": "workspace:*",
+    "viem": "2.56.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.7"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@cluby/config": ["./vendor/config/src/index.ts"],
+      "@cluby/abi": ["./vendor/abi/src/index.ts"],
+      "@cluby/sdk": ["./vendor/sdk/src/index.ts"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "vendor/**/src/**/*.ts"]
+}
